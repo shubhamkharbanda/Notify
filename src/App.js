@@ -14,6 +14,7 @@ import Notes from "./Components/Notes";
 import Signin from "./Components/Signin";
 import axios from "axios";
 import NotesForm from "./Components/NotesForm";
+import loo from "./DSC_0147.jpg"
 
 
 
@@ -185,6 +186,7 @@ function  App() {
         
 
 <Route exact path="/">
+  <img src={loo} alt="." width="200vw" style={{marginLeft:"38vw"}}></img>
   <Notes/>
  <Signin/>
  <br/>
