@@ -32,7 +32,7 @@ export default function Noteitem(props) {
 
 
      const UpdateNote=async()=>{
-      const response =await fetch(`http://localhost:5000/notes/updatenote/${props.id}`,{
+      const response =await fetch(`/notes/updatenote/${props.id}`,{
           
           method: 'PUT',
           headers: {

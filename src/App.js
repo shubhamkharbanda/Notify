@@ -32,7 +32,7 @@ function  App() {
   const[tag,setTag]=useState("")
 
   async function Login(){
-    const response =await fetch("http://localhost:5000/auth/login",{
+    const response =await fetch("/auth/login",{
         
         method: 'POST',
         
@@ -72,7 +72,7 @@ function  App() {
        }
        else{
         
-      const response =await fetch("http://localhost:5000/notes/fetchallnotes",{
+      const response =await fetch("/notes/fetchallnotes",{
           
           method: 'GET',
           headers: {
@@ -91,7 +91,7 @@ function  App() {
       async function UserData(){
         
          
-       const response =await fetch("http://localhost:5000/auth/getuser",{
+       const response =await fetch("/auth/getuser",{
            
            method: 'GET',
            headers: {
@@ -109,7 +109,7 @@ function  App() {
 
   
       const AddNote=async()=>{
-        const response =await fetch("http://localhost:5000/notes",{
+        const response =await fetch("/notes",{
             
             method: 'POST',
             headers: {
